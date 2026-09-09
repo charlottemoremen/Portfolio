@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChessPal | Charlotte Moremen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..500;1,6..72,400..500&family=IBM+Plex+Sans:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div id="sidebar" data-base=".." data-current="design"></div>
+    </aside>
+    <script src="../js/sidebar.js"></script>
+
+    <main class="detail">
+      <a class="back-link" href="../design.html">&larr; Back to Design</a>
+      <h1>ChessPal: A Player&rsquo;s Companion</h1>
+      <p class="venue">Web app prototype &middot; team project</p>
+
+      <figure class="media-swipe">
+        <div class="media-swipe-track">
+          <div class="media-slide">
+            <img src="../images/ChessPalStillEnhanced.png" alt="ChessPal interface for analyzing chess games" />
+          </div>
+          <div class="media-slide">
+            <video src="../images/ChessPal.mp4" controls poster="../images/ChessPalStillEnhanced.png"></video>
+          </div>
+        </div>
+        <button class="swipe-affordance swipe-affordance-left is-hidden" type="button" aria-label="View still image">&larr;</button>
+        <button class="swipe-affordance swipe-affordance-right" type="button" aria-label="View walkthrough video">&rarr;</button>
+        <figcaption>
+          <span class="caption-still">Interface still.</span>
+          <span class="caption-video is-hidden">Prototype walkthrough.</span>
+          <button class="swipe-hint" type="button">Swipe to view full walkthrough &rarr;</button>
+        </figcaption>
+      </figure>
+
+      <p>
+        ChessPal is a companion website for chess players to analyse and share their games. The backend team created an
+        algorithm to scan photos of chess scoresheets, translate them into text, and provide analysis and advice for
+        future games, while I designed this prototype for the frontend interface, focusing on a clean and simple design
+        with features that supplement chess playing.
+      </p>
+    </main>
+  </div>
+  <script src="../js/media-swipe.js" defer></script>
+</body>
+
+</html>
