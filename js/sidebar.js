@@ -1,5 +1,4 @@
-// Single source of truth for the sidebar (name, role, nav, LinkedIn) so it
-// isn't hand-copied into every page. 
+// Single source of truth for the sidebar (name, role, nav, LinkedIn)
 
 (function () {
   var root = document.getElementById('sidebar');
@@ -25,7 +24,7 @@
   root.innerHTML =
     '<div class="sidebar-top">' +
       '<p class="name">Charlotte<br />Moremen</p>' +
-      '<p class="role">User experience &amp; interaction researcher</p>' +
+      '<p class="role">UI/UX researcher &amp designer</p>' +
       '<nav aria-label="Primary"><ul>' + navItems + '</ul></nav>' +
     '</div>' +
     '<div class="sidebar-bottom">' +

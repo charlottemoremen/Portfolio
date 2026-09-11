@@ -5,14 +5,14 @@
 --------------------------------------------------------- */
 
 :root {
-  --paper: #efeee9;
+  --paper: #FBF9EE;
   --paper-alt: #e6e3d8;
   --ink: #20241f;
   --ink-soft: #52584c;
   --teal: #315e55;
   --teal-soft: #7d9992;
   --ochre: #9c6b26;
-  --line: #cdc9ba;
+  --line: #E7C89C;
 
   --serif: "Newsreader", Georgia, serif;
   --sans: "IBM Plex Sans", -apple-system, Segoe UI, sans-serif;
@@ -76,16 +76,20 @@ video {
   height: 100vh;
 }
 
+#sidebar {
+  display: contents;
+}
+
 .sidebar-top .name {
   font-family: var(--serif);
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.25;
   margin: 0 0 0.35rem;
 }
 
 .sidebar-top .role {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: var(--ink-soft);
   margin: 0 0 2.25rem;
 }
@@ -135,7 +139,7 @@ main h1 {
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.15;
-  margin: 0 0 2rem;
+  margin: 0 0 1.25rem;
 }
 
 main .intro {
@@ -144,7 +148,7 @@ main .intro {
   font-style: italic;
   color: var(--ink-soft);
   max-width: 34em;
-  margin: 0 0 2.75rem;
+  margin: 0 0 1.5rem;
 }
 
 main p {
@@ -329,10 +333,11 @@ main p {
 
 .back-link {
   display: inline-block;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: var(--ink-soft);
   text-decoration: none;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
 }
 
 .back-link:hover {
@@ -356,12 +361,16 @@ main p {
   margin-top: 2rem;
 }
 
+.detail .venue + .links {
+  margin-top: 0;
+}
+
 .detail p {
   max-width: none;
 }
 
 .detail figure {
-  margin: 0 0 2rem;
+  margin: 0 0 1rem;
 }
 
 .detail figure img,
@@ -381,7 +390,7 @@ main p {
 }
 
 .detail .links {
-  margin: 0 0 2.25rem;
+  margin: 0 0 2rem;
   font-size: 0.9rem;
   display: flex;
   flex-wrap: wrap;
@@ -391,6 +400,10 @@ main p {
 
 .detail .links .sep {
   color: var(--line);
+}
+
+detail .venue + .links {
+  margin-top: 0;
 }
 
 /* ---------- swipeable image/video figures ---------- */
@@ -422,36 +435,6 @@ main p {
   width: 100%;
   display: block;
   border: none;
-}
-
-.swipe-affordance {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  border: none;
-  background: rgba(32, 36, 31, 0.55);
-  color: var(--paper);
-  font-size: 1.15rem;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.swipe-affordance-right {
-  right: 0.85rem;
-}
-
-.swipe-affordance-left {
-  left: 0.85rem;
-}
-
-.swipe-affordance:hover {
-  background: rgba(32, 36, 31, 0.75);
 }
 
 .is-hidden {
