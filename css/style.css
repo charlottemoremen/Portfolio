@@ -5,14 +5,14 @@
 --------------------------------------------------------- */
 
 :root {
-  --paper: #FBF9EE;
-  --paper-alt: #e6e3d8;
-  --ink: #20241f;
+  --paper: #FDFCF6;
+  --paper-alt: #FBF9EF;
+  --ink: #292A24;
   --ink-soft: #52584c;
   --teal: #315e55;
   --teal-soft: #7d9992;
   --ochre: #9c6b26;
-  --line: #E7C89C;
+  --line: #CFC7B3;
 
   --serif: "Newsreader", Georgia, serif;
   --sans: "IBM Plex Sans", -apple-system, Segoe UI, sans-serif;
@@ -347,18 +347,18 @@ main p {
 .detail .byline {
   font-size: 0.875rem;
   color: var(--ink-soft);
-  margin: 0 0 0.15rem;
+  margin: 0 0 0.5rem;
 }
 
 .detail .venue {
   font-size: 0.875rem;
   color: var(--ochre);
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.5rem;
 }
 
 .detail .venue + figure,
 .detail .venue + p {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .detail .venue + .links {
@@ -390,7 +390,7 @@ main p {
 }
 
 .detail .links {
-  margin: 0 0 2rem;
+  margin: 0 0 1rem;
   font-size: 0.9rem;
   display: flex;
   flex-wrap: wrap;
