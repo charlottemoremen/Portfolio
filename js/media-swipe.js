@@ -14,7 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
     var captionStill = fig.querySelector('.caption-still');
     var captionVideo = fig.querySelector('.caption-video');
 
+    var video = fig.querySelector('video');
+
     function goToSlide(index) {
+      // Stop the video when heading back to the still
+      if (index === 0 && video && !video.paused) video.pause();
       track.scrollTo({ left: track.clientWidth * index, behavior: 'smooth' });
     }
 
