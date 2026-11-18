@@ -1,4 +1,4 @@
-// Single source of truth for the sidebar (name, role, nav, LinkedIn)
+// Single source of truth for the sidebar (name, role, nav, LinkedIn, email)
 
 (function () {
   var root = document.getElementById('sidebar');
@@ -9,8 +9,8 @@
 
   var pages = [
     { key: 'about', label: 'About', href: base + '/index.html' },
-    { key: 'research', label: 'Research', href: base + '/research.html' },
-    { key: 'design', label: 'Design', href: base + '/design.html' }
+    { key: 'research', label: 'UX Research', href: base + '/research.html' },
+    { key: 'design', label: 'Product &amp; Interaction Design', href: base + '/design.html' }
   ];
 
   var navItems = pages
@@ -24,10 +24,11 @@
   root.innerHTML =
     '<div class="sidebar-top">' +
       '<p class="name">Charlotte<br />Moremen</p>' +
-      '<p class="role">UI/UX researcher &amp designer</p>' +
+      '<p class="role"> UX Researcher, Product Designer, &amp; Frontend Developer</p>' +
       '<nav aria-label="Primary"><ul>' + navItems + '</ul></nav>' +
     '</div>' +
     '<div class="sidebar-bottom">' +
-      '<a href="https://www.linkedin.com/in/charlotte-moremen/">LinkedIn</a>' +
+      '<a href="https://www.linkedin.com/in/charlotte-moremen/">LinkedIn</a><br />' +
+      '<a href="mailto:charlottebmoremen@gmail.com">Email</a>' +
     '</div>';
 })();
